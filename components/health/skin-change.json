@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_health_skin_changes",
+  "info": {
+    "name": "Skin Change",
+    "icon": "allergies",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "region": {
+      "type": "string"
+    },
+    "horary": {
+      "type": "time"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Vermelhidao",
+        "Scara",
+        "Coceira",
+        "Ferida",
+        "Hematoma",
+        "Mancha",
+        "Ressecamento",
+        "Assadura"
+      ]
+    }
+  }
+}

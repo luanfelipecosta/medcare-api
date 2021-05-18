@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_health_moods",
+  "info": {
+    "name": "Mood",
+    "icon": "grin",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "horary": {
+      "type": "time"
+    },
+    "mood": {
+      "type": "enumeration",
+      "enum": [
+        "Feliz",
+        "Tranquilo",
+        "Triste",
+        "Irritado",
+        "Agitado",
+        "Deprimido",
+        "Agressivo"
+      ]
+    }
+  }
+}

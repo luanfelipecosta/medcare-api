@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_health_hygienes",
+  "info": {
+    "name": "Hygiene",
+    "icon": "toilet-paper",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "HigieneBucal",
+        "TrocaFralda"
+      ]
+    }
+  }
+}

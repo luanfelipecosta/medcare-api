@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_health_sleeps",
+  "info": {
+    "name": "Sleep",
+    "icon": "moon",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "horary": {
+      "type": "time"
+    },
+    "hadSleep": {
+      "type": "boolean"
+    },
+    "wokeUpWilling": {
+      "type": "boolean"
+    },
+    "DaytimeSleep": {
+      "type": "boolean"
+    },
+    "sleepDificulty": {
+      "type": "boolean"
+    }
+  }
+}

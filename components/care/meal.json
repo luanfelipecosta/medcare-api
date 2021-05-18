@@ -1,0 +1,28 @@
+{
+  "collectionName": "meals",
+  "info": {
+    "name": "Meal",
+    "icon": "apple-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "accepted": {
+      "type": "boolean"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "CafeManha",
+        "LancheManha",
+        "Almoco",
+        "LancheTarde",
+        "Jantar"
+      ],
+      "required": true
+    },
+    "horary": {
+      "type": "time"
+    }
+  }
+}

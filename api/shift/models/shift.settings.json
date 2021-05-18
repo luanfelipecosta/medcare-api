@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shifts",
+  "info": {
+    "name": "Plantões",
+    "description": "Plantões"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "patient": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "nurse": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "assistant": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "date": {
+      "type": "date"
+    },
+    "meals": {
+      "type": "component",
+      "repeatable": true,
+      "component": "care.meal"
+    },
+    "hygienes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "care.hygiene"
+    },
+    "baths": {
+      "type": "component",
+      "repeatable": true,
+      "component": "care.bath"
+    },
+    "mood": {
+      "type": "component",
+      "repeatable": false,
+      "component": "health.mood"
+    },
+    "sleeps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "health.sleep"
+    },
+    "Liquid": {
+      "type": "component",
+      "repeatable": true,
+      "component": "care.liquid"
+    },
+    "skinChanges": {
+      "type": "component",
+      "repeatable": true,
+      "component": "health.skin-change"
+    }
+  }
+}

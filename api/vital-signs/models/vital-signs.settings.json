@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vital_signs",
+  "info": {
+    "name": "VitalSign",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Diastolic",
+        "Systolic",
+        "Pulse",
+        "Temperature"
+      ]
+    },
+    "amount": {
+      "type": "integer"
+    },
+    "at": {
+      "type": "datetime"
+    },
+    "patient": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

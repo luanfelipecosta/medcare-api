@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_care_liquids",
+  "info": {
+    "name": "Liquid",
+    "icon": "glass-whiskey",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "horary": {
+      "type": "time"
+    },
+    "accepted": {
+      "type": "boolean"
+    }
+  }
+}

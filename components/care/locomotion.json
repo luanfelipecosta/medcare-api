@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_care_locomotions",
+  "info": {
+    "name": "Locomotion",
+    "icon": "wheelchair",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "needHelp": {
+      "type": "boolean",
+      "default": false
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Muleta",
+        "CadeiraRodas",
+        "Bengala",
+        "Andador"
+      ],
+      "required": true
+    }
+  }
+}

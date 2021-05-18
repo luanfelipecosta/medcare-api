@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/auth/phone/send",
+      "handler": "Auth.send",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/auth/phone/validate",
+      "handler": "Auth.validate",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/auth/test",
+      "handler": "Auth.test",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

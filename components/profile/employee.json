@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_profiles_employees",
+  "info": {
+    "name": "Funcionário",
+    "icon": "id-badge",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "startedAt": {
+      "type": "date"
+    },
+    "cpf": {
+      "type": "string"
+    },
+    "cnpj": {
+      "type": "string"
+    },
+    "isRegistered": {
+      "type": "boolean"
+    },
+    "address": {
+      "type": "component",
+      "repeatable": false,
+      "component": "misc.address"
+    }
+  }
+}

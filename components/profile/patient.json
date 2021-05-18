@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_profile_patients",
+  "info": {
+    "name": "Paciente",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "medicalRecord": {
+      "type": "richtext"
+    },
+    "startedAt": {
+      "type": "date"
+    }
+  }
+}

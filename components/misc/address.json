@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_misc_addresses",
+  "info": {
+    "name": "Address",
+    "icon": "warehouse"
+  },
+  "options": {},
+  "attributes": {
+    "address": {
+      "type": "string"
+    },
+    "number": {
+      "type": "integer"
+    },
+    "neightborhood": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "zipCode": {
+      "type": "string"
+    }
+  }
+}

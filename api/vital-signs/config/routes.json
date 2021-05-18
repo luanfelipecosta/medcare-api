@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/vital-signs",
+      "handler": "vital-signs.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/vital-signs/count",
+      "handler": "vital-signs.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/vital-signs/:id",
+      "handler": "vital-signs.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/vital-signs",
+      "handler": "vital-signs.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/vital-signs/:id",
+      "handler": "vital-signs.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/vital-signs/:id",
+      "handler": "vital-signs.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

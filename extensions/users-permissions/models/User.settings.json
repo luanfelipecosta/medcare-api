@@ -1,0 +1,88 @@
+{
+  "kind": "collectionType",
+  "collectionName": "users-permissions_user",
+  "info": {
+    "name": "user",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false,
+    "timestamps": true
+  },
+  "attributes": {
+    "username": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "configurable": false
+    },
+    "email": {
+      "type": "email",
+      "minLength": 6,
+      "configurable": false,
+      "required": true
+    },
+    "password": {
+      "type": "string",
+      "configurable": false,
+      "required": false,
+      "private": true,
+      "default": "0000"
+    },
+    "provider": {
+      "type": "string",
+      "configurable": false,
+      "private": true
+    },
+    "confirmed": {
+      "type": "boolean",
+      "private": true,
+      "default": true,
+      "configurable": false
+    },
+    "blocked": {
+      "type": "boolean",
+      "private": true,
+      "default": false,
+      "configurable": false
+    },
+    "role": {
+      "model": "role",
+      "private": true,
+      "via": "users",
+      "plugin": "users-permissions",
+      "configurable": false
+    },
+    "confirmationKey": {
+      "type": "string",
+      "private": true
+    },
+    "confirmationPin": {
+      "type": "string",
+      "required": false,
+      "private": true
+    },
+    "profile": {
+      "type": "dynamiczone",
+      "components": [
+        "profile.employee",
+        "profile.patient"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "birth": {
+      "type": "date"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Paciente",
+        "ResponsavelLegal",
+        "Enfermeiro",
+        "Cuidador"
+      ]
+    }
+  }
+}

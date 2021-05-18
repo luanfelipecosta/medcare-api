@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_health_vital_signs",
+  "info": {
+    "name": "VitalSign",
+    "icon": "battery-three-quarters"
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Systolic",
+        "Diastolic",
+        "Pulse",
+        "Temperature",
+        "RespiratoryFrequency"
+      ]
+    },
+    "amout": {
+      "type": "integer"
+    },
+    "date": {
+      "type": "datetime"
+    }
+  }
+}
